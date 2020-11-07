@@ -18,7 +18,7 @@ class MakeReservationDialog extends ComponentDialog {
 this.addDialog(new TextPrompt(TEXT_PROMPT));
 this.addDialog(new ChoicePrompt(CHOICE_PROMPT));
 this.addDialog(new ConfirmPrompt(CONFIRM_PROMPT));
-this.addDialog(new NumberPrompt(NUMBER_PROMPT),this.noOfParticipants);
+this.addDialog(new NumberPrompt(NUMBER_PROMPT),this.noOfParticipantsValidator);
 this.addDialog(new DateTimePrompt(DATETIME_PROMPT));
  
 this.addDialog(new WaterfallDialog(WATERFALL_DIALOG, [
